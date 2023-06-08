@@ -1,0 +1,31 @@
+<!-- templates/students/add_card.html -->
+
+{% extends 'students/base.html' %}
+
+{% block content %}
+<h2>Add Student Card</h2>
+<form method="post" action="">
+    {% csrf_token %}
+    <label for="series">Series:</label>
+    <input type="text" name="series" required><br>
+    <label for="issue_date">Issue Date:</label>
+    <input type="date" name="issue_date" required><br>
+    <label for="valid_until">Valid Until:</label>
+    <input type="date" name="valid_until" required><br>
+    <label for="surname">Surname:</label>
+    <input type="text" name="surname" required><br>
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br>
+    <label for="patronymic">Patronymic:</label>
+    <input type="text" name="patronymic" required><br>
+    <label for="form_of_study">Form of Study:</label>
+    <input type="text" name="form_of_study" required><br>
+    <label for="faculty">Faculty:</label>
+    <input type="text" name="faculty" required><br>
+    <label for="structural_unit">Structural Unit:</label>
+    <input type="text" name="structural_unit" required><br>
+    <label for="group_number">Group Number:</label>
+    <input type="text" name="group_number" required><br>
+    <input type="submit" value="Add Card">
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- templates/students/register.html -->
+
+{% extends 'students/base.html' %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="post" action="">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required><br>
+    <!-- Add other student card fields here -->
+    <input type="submit" value="Register">
+</form>
+{% endblock %}

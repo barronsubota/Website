@@ -1,0 +1,621 @@
+/* This is Andriy Fodchuks code*/
+/* line 9, ../../Website/main/static/scss/style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../../Website/main/static/scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  padding: 0px;
+}
+
+/* line 21, ../../Website/main/static/scss/style.scss */
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* line 25, ../../Website/main/static/scss/style.scss */
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* line 29, ../../Website/main/static/scss/style.scss */
+html::-webkit-scrollbar-thumb {
+  background-color: #002a5c;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* line 36, ../../Website/main/static/scss/style.scss */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #002a5c transparent;
+  scrollbar-width: 20px;
+}
+
+/* line 42, ../../Website/main/static/scss/style.scss */
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #002a5c;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Playfair Display", serif;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+  stroke-width: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 57, ../../Website/main/static/scss/style.scss */
+  .header .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  /* line 64, ../../Website/main/static/scss/style.scss */
+  .header .header-title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  /* line 69, ../../Website/main/static/scss/style.scss */
+  .header .dist-study {
+    width: auto;
+  }
+}
+
+/* line 74, ../../Website/main/static/scss/style.scss */
+.header .dist-study {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 45px;
+}
+
+/* line 82, ../../Website/main/static/scss/style.scss */
+.header .dist-study .btn {
+  border-radius: 4em;
+}
+
+/* line 85, ../../Website/main/static/scss/style.scss */
+.header .dist-study .btn:hover {
+  background-color: cadetblue;
+  border-color: cadetblue;
+}
+
+/* line 92, ../../Website/main/static/scss/style.scss */
+.header p {
+  padding-top: 10px;
+  font-size: large;
+  color: #f6f9f7;
+}
+
+@media (max-width: 768px) {
+  /* line 98, ../../Website/main/static/scss/style.scss */
+  .header .header {
+    padding: 10px;
+  }
+}
+
+/* line 104, ../../Website/main/static/scss/style.scss */
+.navbar-light {
+  display: flex;
+  font-size: larger;
+  font-weight: 200;
+  /* linear-gradient(60deg, #2ab592, #63e66c) "Playfair Display", serif*/
+  background: #002a5c !important;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 112, ../../Website/main/static/scss/style.scss */
+.navbar-light .navbar-nav {
+  padding: 10px 0px;
+}
+
+/* line 115, ../../Website/main/static/scss/style.scss */
+.navbar-light .navbar-nav .dropdown-item {
+  color: #002a5c;
+}
+
+/* line 119, ../../Website/main/static/scss/style.scss */
+.navbar-light .navbar-nav li a {
+  color: #f6f9f7;
+}
+
+/* line 122, ../../Website/main/static/scss/style.scss */
+.navbar-light .navbar-nav li a:hover {
+  transition: 2s;
+  font-weight: 500;
+  text-decoration: underline yellow;
+}
+
+/* line 131, ../../Website/main/static/scss/style.scss */
+#carouselExampleRide img {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  /* line 136, ../../Website/main/static/scss/style.scss */
+  #carouselExampleRide img .carousel-caption {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 143, ../../Website/main/static/scss/style.scss */
+  .carousel-item img {
+    max-height: 300px;
+  }
+}
+
+/* line 148, ../../Website/main/static/scss/style.scss */
+.chapter-divider {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  display: block;
+  border: 5px double black;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  margin: 50px auto 50px auto;
+  width: 50%;
+  justify-content: center;
+  border-radius: 4em;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 8px 16px 0 #09309c;
+  /*box-shadow: 10px 10px 2px 8px;*/
+}
+
+/* line 168, ../../Website/main/static/scss/style.scss */
+.carousel-item h3 {
+  font-weight: 300;
+  font-size: xx-large;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 176, ../../Website/main/static/scss/style.scss */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+/* line 184, ../../Website/main/static/scss/style.scss */
+.about .image {
+  flex-basis: 33.33%;
+  text-align: center;
+}
+
+/* line 189, ../../Website/main/static/scss/style.scss */
+.about .image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 196, ../../Website/main/static/scss/style.scss */
+.about .center-text {
+  flex-basis: 33.33%;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 203, ../../Website/main/static/scss/style.scss */
+  .about .container {
+    flex-direction: row;
+  }
+}
+
+/* line 209, ../../Website/main/static/scss/style.scss */
+.flex-container {
+  display: flex;
+  align-items: center;
+  /* centers the content vertically */
+  background-image: linear-gradient(90deg, #020024 0%, #002a5c 35%, #002a5c 100%);
+}
+
+/* line 214, ../../Website/main/static/scss/style.scss */
+.flex-container .image-container {
+  flex-basis: 30%;
+  /* sets the width of the image */
+  margin-right: 20px;
+  /* adds some spacing between the image and text */
+  padding-left: 40px;
+}
+
+/* line 220, ../../Website/main/static/scss/style.scss */
+.flex-container .image-container img {
+  width: 80%;
+  height: auto;
+}
+
+/* line 225, ../../Website/main/static/scss/style.scss */
+.flex-container .text-container {
+  flex-basis: 70%;
+  /* sets the width of the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* centers the content vertically */
+}
+
+/* line 232, ../../Website/main/static/scss/style.scss */
+.flex-container .text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  /* centers the heading horizontally */
+}
+
+/* line 238, ../../Website/main/static/scss/style.scss */
+.flex-container .text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  /* centers the text horizontally */
+}
+
+/*.flex-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-image: $third-color;
+
+    .card {
+        flex-basis: calc(25% - 20px);
+        margin: 20px 10px;
+        padding: 20px;
+        background-color: $third-color;
+        border-radius: 1em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .card-icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .card-number {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 767px) {
+        .card {
+            flex-basis: calc(50% - 20px);
+        }
+    }
+}*/
+/*.specialties {
+    height: 100%;
+    padding-bottom: 300px;
+    .card {
+        height: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        margin-bottom: 30px;
+
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .card-title {
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .card-text {
+                flex: 1;
+                margin-bottom: 1rem;
+            }
+
+            .btn {
+                align-self: center;
+            }
+        }
+    }
+}
+*/
+/*
+.specialties {
+    background-color: #f8f9fa;
+    margin-bottom: 50px;
+    height: 500px;
+    padding: 80px ;
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 30px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: #0069d9;
+    }
+}*/
+/* line 390, ../../Website/main/static/scss/style.scss */
+.specialties {
+  background-color: #f8f9fa;
+  width: 100%;
+  padding: 80px;
+}
+
+/* line 395, ../../Website/main/static/scss/style.scss */
+.specialties .card {
+  border-radius: 4em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+/* line 402, ../../Website/main/static/scss/style.scss */
+.specialties .card:hover {
+  box-shadow: 5px 16px 32px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 406, ../../Website/main/static/scss/style.scss */
+.specialties .card img {
+  border-radius: 4em;
+  max-width: 100%;
+  height: 300px;
+}
+
+/* line 412, ../../Website/main/static/scss/style.scss */
+.specialties .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 420, ../../Website/main/static/scss/style.scss */
+.specialties .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* line 424, ../../Website/main/static/scss/style.scss */
+.specialties .card-title:hover {
+  transition: 1s ease-in-out;
+  color: #002a5c;
+  font-size: 28px;
+}
+
+/* line 431, ../../Website/main/static/scss/style.scss */
+.specialties .card-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 436, ../../Website/main/static/scss/style.scss */
+.specialties .btn-primary {
+  /*
+        border-radius: $border-radius;
+        background-color: #007bff;
+        color: #fff;
+        margin-top: 20px;*/
+  background: rgba(0, 42, 92, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* line 451, ../../Website/main/static/scss/style.scss */
+.our-college {
+  height: auto;
+  width: 100%;
+  padding: 80px;
+  padding-top: 50px;
+  /* Adjust the top padding as needed */
+  padding-bottom: 50px;
+  /* Adjust the bottom padding as needed */
+  align-items: center;
+  position: relative;
+}
+
+/* line 460, ../../Website/main/static/scss/style.scss */
+.our-college .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a box shadow */
+}
+
+/* line 472, ../../Website/main/static/scss/style.scss */
+.our-college .card:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a box shadow */
+}
+
+/* line 476, ../../Website/main/static/scss/style.scss */
+.our-college .card p {
+  font-size: x-large;
+}
+
+/* line 481, ../../Website/main/static/scss/style.scss */
+.our-college .our-college .card:last-child {
+  margin-bottom: 20px;
+  /* Adjust the bottom margin as needed */
+}
+
+/* line 485, ../../Website/main/static/scss/style.scss */
+.our-college .card-icon {
+  font-size: 48px;
+}
+
+/* line 489, ../../Website/main/static/scss/style.scss */
+.our-college .card-icon img {
+  width: 64px;
+  /* Adjust the width as needed */
+  height: 64px;
+  /* Adjust the height as needed */
+  margin-bottom: 10px;
+}
+
+/* line 495, ../../Website/main/static/scss/style.scss */
+.our-college .card-body {
+  flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  /* line 502, ../../Website/main/static/scss/style.scss */
+  .our-college .card {
+    padding: 20px;
+  }
+}
+
+/* line 507, ../../Website/main/static/scss/style.scss */
+.gallery {
+  height: 600px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 767px) {
+  /* line 515, ../../Website/main/static/scss/style.scss */
+  .our-college {
+    margin-bottom: 20px;
+    /* Add a bottom margin to create space below the section */
+  }
+  /* line 519, ../../Website/main/static/scss/style.scss */
+  .chapter-divider {
+    clear: both;
+    margin-top: 20px;
+    /* Add a top margin to create space above the section */
+  }
+}
+
+/* line 525, ../../Website/main/static/scss/style.scss */
+.news {
+  width: 100%;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* line 530, ../../Website/main/static/scss/style.scss */
+.news img {
+  width: 100%;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 536, ../../Website/main/static/scss/style.scss */
+  .news .card {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 543, ../../Website/main/static/scss/style.scss */
+.footer {
+  background-color: #002a5c;
+  z-index: 1;
+  position: absolute;
+}
+
+/* line 548, ../../Website/main/static/scss/style.scss */
+.footer h6 {
+  text-align: center;
+}
+
+/* line 552, ../../Website/main/static/scss/style.scss */
+.footer p {
+  padding-left: 5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

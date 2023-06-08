@@ -1,0 +1,12 @@
+<!-- templates/students/profile.html -->
+
+{% extends 'students/base.html' %}
+
+{% block content %}
+<h2>Welcome, {{ student_card.name }}!</h2>
+<!-- Display student card details here -->
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <input type="submit" value="Logout">
+</form>
+{% endblock %}
